@@ -1,0 +1,23 @@
+[package]
+name = "axum-metrics"
+version = "0.1.0"
+edition = "2021"
+categories = ["development-tools::debugging", "network-programming", "web-programming"]
+keywords = ["axum", "metrics", "prometheus"]
+repository = "https://github.com/oxalica/axum-metrics"
+description = "Minimalist exporter-agnostic metrics instrumentation middleware for axum"
+license = "MIT OR Apache-2.0"
+
+[dependencies]
+axum = { version = "0.7", default-features = false, features = ["matched-path"] }
+bytes = "1"
+http-body = "1"
+metrics = "0.24"
+pin-project-lite = "0.2"
+tower-layer = "0.3"
+tower-service = "0.3"
+
+[dev-dependencies]
+axum = "0.7" # Enable default features.
+metrics-exporter-prometheus = "0.16.0"
+tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros"] }
