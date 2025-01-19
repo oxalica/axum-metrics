@@ -1,6 +1,6 @@
 [package]
 name = "axum-metrics"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2021"
 categories = ["development-tools::debugging", "network-programming", "web-programming"]
 keywords = ["axum", "metrics", "prometheus"]
