@@ -19,5 +19,5 @@ tower-service = "0.3"
 
 [dev-dependencies]
 axum = ">=0.7, <0.9" # Enable default features.
-metrics-exporter-prometheus = "0.16.0"
+metrics-exporter-prometheus = "0.17.0"
 tokio = { version = "1.40.0", features = ["rt-multi-thread", "macros"] }
